@@ -74,6 +74,6 @@ flowchart LR
 
 The parent app distinguishes pending research and approved reports in its SQLite history. Do not provide patient details to the standalone tools. This prototype is informational and must not determine treatment or medication dosage.
 
-See [DEMO.md](DEMO.md), [SPEC.md](SPEC.md), and [TASKS.md](TASKS.md).
+See the [real Codex CLI tool-call transcript excerpt](EXTERNAL-CLIENT-DEMO.md), [DEMO.md](DEMO.md), [SPEC.md](SPEC.md), and [TASKS.md](TASKS.md).
 
 See [VALIDATION.md](VALIDATION.md) for verified calls and remaining live blockers. For Codex CLI, configure the same server as a stdio MCP entry with `command`, `args`, `env_vars = ["TINYFISH_API_KEY"]`, and `tool_timeout_sec = 120`. Use an inherited key or the client's secret configuration. The signed-in Codex test and Claude test used isolated per-command settings.
