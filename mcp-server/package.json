@@ -1,0 +1,24 @@
+{
+  "name": "medicine-autopilot-site-to-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.ts",
+    "test": "node --test tools.test.ts",
+    "typecheck": "tsc --noEmit",
+    "health": "node client.ts health",
+    "verify": "node client.ts verify"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2"
+  }
+}
